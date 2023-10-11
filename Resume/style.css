@@ -1,0 +1,274 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg: rgb(7, 70, 85);
+}
+
+body {
+  font-family: sans-serif;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  min-height: auto;
+  max-width: 800px;
+  width: 100%;
+  margin: 100px 15px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.container section .info h2 {
+  margin-bottom: 7px;
+}
+
+.container section .info b {
+  color: var(--bg);
+  display: block;
+  margin-bottom: 7px;
+}
+
+.container section .info p {
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  color: #333;
+}
+
+.container section:not(:nth-child(2)) {
+  padding: 20px 40px;
+}
+
+.container section:first-child,
+.container section:nth-child(2) {
+  grid-column: span 2;
+}
+
+.container section:nth-child(2) {
+  background-color: var(--bg);
+  color: white;
+}
+
+.container section:nth-child(2) .flex {
+  padding: 20px 40px;
+}
+
+.container section:nth-child(2) .flex .social-handles ul li {
+  margin-bottom: 10px;
+}
+
+.container section:nth-child(2) .flex .social-handles ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  color: white;
+}
+
+.container section:nth-child(2) .flex .address p {
+  margin-bottom: 10px;
+  letter-spacing: 0.5px;
+}
+
+.container section:last-child {
+  grid-column: span 2;
+  text-align: center;
+  background: var(--bg);
+  color: white;
+  letter-spacing: 0.5px;
+}
+
+.container section .flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.container section ul {
+  margin: 0;
+  padding: 0;
+}
+
+.container section ul li {
+  list-style: none;
+}
+
+.container section ul li a {
+  text-decoration: none;
+}
+
+.container section .tags {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container section .tags li {
+  padding: 7px 15px;
+  background-color: var(--bg);
+  color: white;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  margin: 4px;
+  border-radius: 4px;
+}
+
+.container section h2 {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.container section b {
+  font-weight: 600;
+}
+
+.container .education {
+  margin-bottom: 20px;
+}
+
+.container .education h2 {
+  margin-bottom: 7px;
+}
+
+.container .education ul .wrapper {
+  margin-bottom: 14px;
+}
+
+.container .education ul .wrapper b {
+  display: block;
+  letter-spacing: 0.5px;
+  margin-bottom: 7px;
+}
+
+.container .education ul .wrapper p {
+  letter-spacing: 0.5px;
+  margin-bottom: 7px;
+}
+
+.container .education ul .wrapper .flex p {
+  margin: 0;
+  font-size: 15px;
+}
+
+.container .skills {
+  margin-bottom: 20px;
+}
+
+.container .skills h2 {
+  margin-bottom: 7px;
+}
+
+.container .trainings {
+  margin-bottom: 20px;
+}
+
+.container .trainings h2 {
+  margin-bottom: 7px;
+}
+
+.container .trainings .wrapper {
+  margin-bottom: 14px;
+}
+
+.container .trainings b {
+  display: block;
+  margin-bottom: 7px;
+}
+
+.container .trainings p {
+  margin-bottom: 7px;
+}
+
+.container .achievements {
+  margin-bottom: 20px;
+}
+
+.container .achievements h2 {
+  margin-bottom: 7px;
+}
+
+.container .achievements ul li {
+  margin-bottom: 10px;
+}
+
+.container .achievements ul li b {
+  display: block;
+  margin-bottom: 7px;
+  letter-spacing: 0.5px;
+}
+
+.container .achievements ul li p {
+  letter-spacing: 0.5px;
+}
+
+.container .certificates {
+  margin-bottom: 20px;
+}
+
+.container .certificates h2 {
+  margin-bottom: 7px;
+}
+
+.container .certificates ul li b {
+  display: block;
+  margin-bottom: 7px;
+  letter-spacing: 0.5px;
+}
+
+.container .certificates ul li p {
+  letter-spacing: 0.5px;
+}
+
+.container .languages {
+  margin-bottom: 20px;
+}
+
+.container .languages h2 {
+  margin-bottom: 7px;
+}
+
+.container .languages .flex {
+  flex-wrap: nowrap;
+}
+
+.container .languages .flex .left i,
+.container .languages .flex .right i {
+  display: block;
+  margin-bottom: 7px;
+}
+
+.container .languages .flex .left p,
+.container .languages .flex .right p {
+  font-size: 15px;
+}
+
+.container .interests h2 {
+  margin-bottom: 7px;
+}
+
+@media only screen and (max-width: 767px) {
+  .container section:not(:nth-child(2)),
+  .container section:nth-child(2) .flex {
+    padding: 20px;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .container section:first-child,
+  .container section:nth-child(2) {
+    grid-column: unset;
+  }
+
+  .container section:last-child {
+    grid-column: unset;
+  }
+}

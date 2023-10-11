@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+:root{
+    --primary-color: #f60;
+    --secondary-color: #444;
+    --pure-black: #000;
+    --background: #eee;
+    --foreground: #fff;
+    --shadow: rgba(0,0,0,0.4);
+}
+
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: var(--background);
+    min-height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    min-height: 100vh;
+    width: 100%;
+}
+
+header .navbar{
+    position: fixed;
+    top: 0;
+    height: 150px;
+    width: 100vw;
+    margin: 0 auto;
+    padding: 0 40px;
+    z-index: 100;
+    transition: .4s linear;
+}
+
+header .navbar.sticky{
+    background: var(--primary-color);
+    height: 100px;
+}
+
+header .navbar #menus li{
+    margin-right: 36px;
+}
+
+header .navbar #menus li a{
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--foreground);
+    transition: .4s linear;
+}
+
+header .navbar #menus li a:hover{
+    color: var(--primary-color);
+}
+
+header .navbar #logo{
+    position: relative;
+    height: 150px;
+    min-width: 150px;
+    gap: 40px;
+    overflow: hidden;
+}
+
+header .navbar.sticky #logo{
+    height: 100px;
+}
+
+header .navbar a{
+    position: relative;
+    color: var(--pure-black);
+}
+
+header .navbar a ion-icon{
+    font-size: 26px;
+    color: var(--primary-color);
+}
+
+header .navbar #logo img{
+   height: 150px;
+   width: auto;
+   filter:drop-shadow(0 0 5px var(--foreground)) invert(1);
+}
+
+.carousel-inner{
+    max-height: 100vh;
+}
+
+.carousel-inner img{
+    height: 100vh;
+}
+
+.carousel-caption{
+    position: relative;
+    top: 40%;
+}
+
+.carousel-caption .flex{
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.carousel-caption .flex a, .carousel-caption .btns{
+    text-decoration: none;
+    background-color: var(--primary-color);
+    padding: 20px 40px;
+    border: 1px solid transparent;
+    color: var(--foreground);
+    transition: .4s linear;
+    cursor: pointer !important;
+}
+
+.carousel-caption .flex a:hover{
+    background: transparent;
+    border: 1px solid var(--primary-color);
+    cursor: pointer;
+}
+
+.carousel-caption .flex a:last-child{
+    background-color: var(--pure-black);
+}
+
+.carousel-caption h1{
+    font-size: 5vw;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+#categories{
+    position: relative;
+    padding: 0 40px;
+}
+
+#categories .col-33{
+    height: 360px;
+    width: 410px;
+}
+
+#categories .col-33 .imgbox{
+    position: relative;
+    height: 300px;
+    width: 410px;
+    overflow: hidden;
+    transition: .3s linear;
+}
+
+#categories .col-33 .imgbox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#article{
+    position: relative;
+    padding: 0 40px;
+}
+
+#article .col-33{
+    min-height: 360px;
+    width: 410px;
+}
+
+#article .col-33 .imgbox{
+    position: relative;
+    height: 300px;
+    width: 410px;
+    overflow: hidden;
+    transition: .3s linear;
+}
+
+#article .col-33 .imgbox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#about{
+    position: relative;
+    padding: 0 40px;
+    width: 100%;
+}
+
+#about .col50{
+    width: 50%;
+    min-height: 460px;
+    background: var(--pure-black);
+}
+
+#about .images{
+    height: 300px;
+    flex-wrap: wrap;
+}
+
+#about .images img{
+    height: 50%;
+    width: 50%;
+}
+
+#about .col50.details h1, p{
+    color: var(--foreground);
+}
+
+#about .col50.details a{
+    color: var(--foreground);
+    text-decoration: none;
+    padding: 20px 40px;
+    border: 1px solid var(--foreground);
+    font-weight: bold;
+    transition: .4s linear;
+}
+
+#about .col50.details a:hover{
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+#about .col50.details a:hover ion-icon{
+    color: var(--primary-color);
+    transition: .4s linear;
+}
+
+#newsletter{
+    position: relative;
+    padding: 40px;
+}
+
+#info{
+    position: relative;
+    padding: 0 40px;
+}

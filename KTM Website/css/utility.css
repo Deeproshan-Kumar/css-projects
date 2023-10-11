@@ -1,0 +1,67 @@
+/* Flex Box Classes */
+
+.flex{
+    display: flex;
+}
+
+.justify-content-center{
+    justify-content: center;
+}
+
+.justify-content-between{
+    justify-content: space-between;
+}
+
+.align-items-center{
+    align-items: center;
+}
+
+.flex-direction-row{
+    flex-direction: row;
+}
+
+.flex-direction-column{
+    flex-direction: column;
+}
+
+/* Text Decoration None  */
+
+.text-decoration-none{
+    text-decoration: none;
+}
+
+.list-style-none{
+    list-style: none;
+}
+
+/* Text Alignment Classes */
+
+.text-center{
+    text-align: center;
+}
+
+.text-left{
+    text-align: left;
+}
+
+.text-right{
+    text-align: right;
+}
+
+.text-justify{
+    text-align: justify;
+}
+
+/* Margin and Padding Classes */
+
+.m-0{
+    margin: 0;
+}
+
+.mt-20{
+    margin-top: 20px;
+}
+
+.p-0{
+    padding: 0;
+}

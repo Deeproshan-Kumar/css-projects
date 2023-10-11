@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+/* Navbar CSS */
+
+.navbar {
+    padding: 0;
+    border-bottom: 1px solid rgba(255,255,255,0.07);
+    z-index: 999;
+    background: transparent;
+}
+
+.navbar-brand {
+    padding: 0;
+}
+
+.brand-logo {
+    height: 80px;
+    max-width: 200px;
+    width: 100%;
+}
+
+.brand-logo img {
+    height: 100%;
+    width: 100%;
+    filter: brightness(100);
+    object-fit: cover;
+}
+
+.navbar-nav {
+    min-height: 80px;
+}
+
+.nav-link {
+    color: #fff !important;
+}
+
+.nav-item,
+.buttons {
+    display: flex;
+    align-items: center;
+}
+
+.buttons .btn {
+    color: #fff;
+}
+
+.dropdown-menu {
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    min-width: 220px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.05);
+}
+
+.dropdown-menu::before {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: 30px;
+    height: 8px;
+    width: 8px;
+    background-color: #fff;
+    transform: rotate(45deg);
+    z-index: 1;
+}
+
+.dropdown-item {
+    white-space: revert;
+}
+
+/* Banner CSS */
+
+.banner {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    padding-top: 80px;
+    background: linear-gradient(#6610f2, #6f42c1);
+}
+
+.banner .banner-inner {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.banner .banner-inner .panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
